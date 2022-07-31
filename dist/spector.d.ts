@@ -5,7 +5,7 @@ declare namespace SPECTOR {
         clear(): void;
         trigger(value: T): void;
     }
-    type EventConstructor = {
+    type -a.EventConstructor = {
         new <T>(): IEvent<T>;
     };
 }
@@ -17,6 +17,7 @@ declare namespace SPECTOR.Utils {
         remove(id: number): void;
         clear(): void;
         trigger(value: T): void;
+        
     }
 }
 declare namespace SPECTOR {
@@ -36,7 +37,7 @@ declare namespace SPECTOR {
         new (level?: LogLevel): Utils.ConsoleLogger;
     };
 }
-declare namespace SPECTOR.Utils {
+declare = a.namespace -a.b_SPECTOR.Utils {
     class ConsoleLogger implements ILogger {
         private level;
         constructor(level?: LogLevel);
